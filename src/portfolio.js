@@ -7,21 +7,19 @@ import emoji from "react-easy-emoji";
 
 const greeting = {
   /* Your Summary And Greeting Section */
-  username: "Saad Pasta",
-  title: "Hi all, I'm Saad",
-  subTitle: emoji("A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."),
-  resumeLink: "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing"
+  username: "Nurhak ALTIN",
+  title: "Hi all, I'm Nurhak",
+  subTitle: emoji("A passionate Software Developer, Entrepreneur, DevOps Engineer 🚀 having an experience of building Web and Computer Vision applications. Creating CI/CD environments."),
+  resumeLink: "https://drive.google.com/file/d/1h45oKnWZYqTaiS2JK8w_KGWNWYCAdfoh/view?usp=sharing"
 };
 
 // Your Social Media Link
 
 const socialMediaLinks = {
 
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7"
+  github: "https://github.com/Nurhak",
+  linkedin: "https://www.linkedin.com/in/nurhakaltin/",
+  gmail: "nurhakaltin@gmail.com",
   // Instagram and Twitter are also supported in the links!
 };
 
@@ -29,11 +27,12 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What i do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "CRAZY SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji("⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean")
+    emoji("⚡ Creating highly interactive tools for system adminstrations."),
+    emoji("⚡ Creating CI/CD envrionments for the different type of applications."),
+    emoji("⚡ Migration of legacy VCS to the git environment."),
+    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications")
   ],
 
 /* Make Sure You include correct Font Awesome Classname to view your icon
@@ -41,12 +40,20 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "++",
+      fontAwesomeClassname: "fab fa-cuttlefish"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "linux",
+      fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "linux",
+      fontAwesomeClassname: "fab fa-redhat"
     },
     {
       skillName: "sass",
@@ -61,28 +68,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
     },
     {
       skillName: "python",
@@ -91,6 +82,14 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "docker",
       fontAwesomeClassname: "fab fa-docker"
+    },
+    {
+      skillName: "html-5",
+      fontAwesomeClassname: "fab fa-html5"
+    },
+    {
+      skillName: "css3",
+      fontAwesomeClassname: "fab fa-css3-alt"
     }
   ]
 };
@@ -101,17 +100,30 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design",  //Insert stack or technology you have experience in
+      ID:1,
+      Stack:"OOP",
+      progressPercentage: "80%"
+    },
+    {
+      ID:2,
+      Stack: "C++",  //Insert stack or technology you have experience in
       progressPercentage: "90%"  //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      ID:3,
+      Stack: "Linux",
+      progressPercentage: "90%"
     },
     {
-      Stack: "Programming",
+      ID:4,
+      Stack: "CI/CD",
+      progressPercentage: "90%"
+    },
+    {
+      ID:5,
+      Stack: "Frontend Development",
       progressPercentage: "60%"
-    }
+    },
   ]
 };
 
@@ -119,8 +131,8 @@ const techStack = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  githubConvertedToken: "Your Github Converted Token",
-  githubUserName: "Your Github Username",
+  githubConvertedToken: "MTBjMDI5YzEyZGZiMmZhZmU5MGY4NjM4YTU3NWQ4MDI3ZTRkZTc3Mw==",
+  githubUserName: "Nurhak",
   showGithubProfile :"true" // Set true or false to show Contact profile using Github, defaults to false 
 };
 
@@ -132,12 +144,12 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: "https://drive.google.com/uc?id=1exWn9T6j8TsfDDHJnS3VR66eP6RiGAfY",
-      link: "http://saayahealth.com/"
+      image: "partnersbond",
+      link: "http://partnersbond.com/"
     },
     {
-      image: "https://drive.google.com/uc?id=1MXoXcQRK-pH8J82wyjCW4SJk5AxJe7tf",
-      link: "http://nextu.se/"
+      image: "visipurs",
+      link: "http://visipurs.com/"
     }
   ]
 };
@@ -151,30 +163,30 @@ const achievementSection = {
 
   achivementsCards: [
     {
-      title: "Google Code-In Finalist",
-      subtitle: "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
+      title: "Second Prize of TUBITAK 2241 Competition",
+      subtitle: "A Control System and Method Used in the Rubber Sector named graduation thesis has won the competition in Industrial Final Thesis field.",
       image:
-        "https://1.bp.blogspot.com/-Ig-v1tDXZt4/XDODmZvWp1I/AAAAAAAAB0A/KtbFdBPFVQw2O15FekkIR0Yg8MUp--rngCLcBGAs/s1600/GCI%2B-%2BVertical%2B-%2BGray%2BText%2B-%2BWhite%2BBG.png",
+        "https://upload.wikimedia.org/wikipedia/tr/thumb/d/d0/TUBITAK-Logo.jpg/200px-TUBITAK-Logo.jpg",
       footerLink: [
-        { name: "Certification", url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing" },
-        { name: "Award Letter", url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing" },
-        { name: "Google Code-in Blog", url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html" }
+        { name: "Award Letter", url: "http://www.kocaeli.edu.tr/int/haber-ayrinti.php?h=Frz5K26q" }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle: "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Google_Assistant_logo.svg/1200px-Google_Assistant_logo.svg.png",
-      footerLink: [{ name: "View Google Assistant Action", url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en" }]
+      title: "Mate ROV International Competitor",
+      subtitle: "The competition is conducted at NASA have participated with our team to represent Turkey.",
+      image: "https://pbs.twimg.com/profile_images/1069664567280717825/Qy1lfzQa.jpg",
+      footerLink: [
+        { name: "ROV Video", url: "https://www.youtube.com/watch?v=gguO14y8kzQ" },
+        { name:"Social Media", url: "https://twitter.com/luckyfinteam"} 
+      ] 
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRu93Bd6LDbxPEOXr-hfLqLYzmHny8c0MJoI3exQP-lwpFLRT7g&s",
+      title: "Enterprise Design Thinking Practitioner",
+      subtitle: "Enterprise Design Thinking Practitioner",
+      image: "https://images.youracclaim.com/size/680x680/images/bc08972c-3c7d-4b99-82a0-c94bcca36674/Badges_v8-07%2BPractitioner.png",
       footerLink: [
-        { name: "Certification", url: "" },
-        { name: "Final Project", url: "https://pakistan-olx-1.firebaseapp.com/" }
+        { name: "Certification", url: "https://images.youracclaim.com/size/680x680/images/bc08972c-3c7d-4b99-82a0-c94bcca36674/Badges_v8-07%2BPractitioner.png" }
       ]
     }
   ]
@@ -204,36 +216,54 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
-  subtitle: emoji("I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"),
+  title: "PUBLICATIONS",
+  subtitle: emoji("I LOVE TO SHARE MY SCIENTIFIC STUDIES 📢"),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/",
-      image:
-        "https://scontent.fkhi6-1.fna.fbcdn.net/v/t1.0-9/76714032_1730516240415559_1293494289556307968_o.jpg?_nc_cat=103&_nc_ohc=s5f81rdZd6wAQmqUa52YQBA21MjVOy7e-HN9jI7MspRDC-v5ahEouyInQ&_nc_ht=scontent.fkhi6-1.fna&oh=c29141a9a0de7ff2011a8191f5475a78&oe=5E83127C"
+      title: "Deep Learning Based Road Crack Detection on an Embedded Platform",
+      subtitle: "World Academy of Science, Engineering and Technology International Journal of Computer and Information Engineering(WASET)",
+      slides_url: "https://publications.waset.org/abstracts/87638/pdf"
     }
   ]
 };
 
 // Podcast Section
 
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+const patentsSection = {
+  title: emoji("Patents 📃"),
+  subtitle: "I LIKE TO CREATE NEW METHODOLOGIES AND DEVICES",
 
   // Please Provide with Your Podcast embeded Link
-  podcast: ["https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"]
+  patents: [
+    {
+      url: "https://portal.turkpatent.gov.tr/anonim/arastirma/patent/detayli",
+      title: "Tire Pattern Trace Analysis and Approval System and Method",
+      description: "05-11-2018 2018/16577 2018-GE-223124"
+    },
+    {
+      url: "https://portal.turkpatent.gov.tr/anonim/arastirma/patent/detayli",
+      title: "Tire Crushing Machine",
+      description: "05-11-2018 2018/16577 2018-GE-470267"
+    },
+    {
+      url: "https://portal.turkpatent.gov.tr/anonim/arastirma/patent/detayli",
+      title: "Tire Pattern Trial Analysis and Approval System and Method",
+      description: " 01-10-2018 2018/14272 2018-GE-414046"
+    },
+    {
+      url: "https://portal.turkpatent.gov.tr/anonim/arastirma/patent/detayli",
+      title: "Tire Pattern Measurement Machine",
+      description: "28-06-2018 2018/09253 2018-GE-283122"
+    },
+  ]
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-3243454077",
-  email_address: "saadpasta70@gmail.com"
+  number: "+905304636980",
+  email_address: "nurhakaltin@gmail.com"
 };
 
 //Twitter Section
@@ -243,4 +273,4 @@ const twitterDetails = {
   userName : "twitter"//Replace "twitter" with your twitter username without @
   
 };
-export { greeting, socialMediaLinks, skillsSection, techStack, openSource, bigProjects, achievementSection, blogSection, talkSection, podcastSection, contactInfo , twitterDetails};
+export { greeting, socialMediaLinks, skillsSection, techStack, openSource, bigProjects, achievementSection, blogSection, talkSection, patentsSection, contactInfo , twitterDetails};

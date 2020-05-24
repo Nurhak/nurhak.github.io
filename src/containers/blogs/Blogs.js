@@ -14,9 +14,10 @@ export default function Blogs() {
       </div>
       <div className="blog-main-div">
         <div className="blog-text-div">
-          {blogSection.blogs.map(blog => {
+          {blogSection.blogs.map((blog,index) => {
             return (
               <BlogCard
+                key={index}
                 blog={{
                   url: blog.url,
                   image: blog.image,

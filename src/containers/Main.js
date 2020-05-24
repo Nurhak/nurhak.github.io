@@ -10,7 +10,7 @@ import Blogs from "./blogs/Blogs";
 import Contact from "./contact/Contact";
 import Footer from "../components/footer/Footer";
 import Talks from "./talks/Talks";
-import Podcast from "./podcast/Podcast";
+import Patents from "./patents/Patents";
 import Top from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
@@ -26,10 +26,8 @@ export default class Main extends Component {
         <Projects />
         <StartupProject />
         <Achievement />
-        <Blogs />
+        <Patents />
         <Talks />
-        <Twitter />
-        <Podcast />
         <Profile />
         <Footer />
         <Top />
