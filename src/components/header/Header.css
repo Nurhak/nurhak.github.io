@@ -38,7 +38,9 @@
   line-height: normal;
 }
 .header .logo-name {
-  font: 400 xxx-large 'Cookie', Helvetica, sans-serif;
+  font-family: Cookie, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: xxx-large;
   padding: 0 10px;
 }
 
