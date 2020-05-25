@@ -1,4 +1,4 @@
-# Nurhak ALTIN Portfolio [![Netlify Status](https://api.netlify.com/api/v1/badges/9f98fa5a-31d4-4c7e-8258-34c86e7b787c/deploy-status)](https://app.netlify.com/sites/confident-kare-3ca8ee/deploys)
+# Nurhak ALTIN Portfolio [![Netlify Status](https://api.netlify.com/api/v1/badges/9f98fa5a-31d4-4c7e-8258-34c86e7b787c/deploy-status)](https://app.netlify.com/sites/confident-kare-3ca8ee/deploys) (https://www.nurhakaltin.com)
 
 Inherited from https://github.com/saadpasta/developerFolio
 
