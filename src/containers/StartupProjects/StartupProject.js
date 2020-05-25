@@ -17,11 +17,11 @@ export default function StartupProject() {
       <div>
         <h1 className="skills-heading">{bigProjects.title}</h1>
         <p className="subTitle project-subtitle">{bigProjects.subtitle}</p>
-        <div className="startup-projects-main">
+        <div className="startup-projects-main row">
           <div className="startup-project-text">
             {bigProjects.projects.map((project,index) => {
               return (
-                <div className="saaya-health-div starup-project-image" key={index} onClick={() => openProjectInNewWindow(project.link)}>
+                <div className="saaya-health-div col-md-6" key={index} onClick={() => openProjectInNewWindow(project.link)}>
                     <ReturnImage name={project.image}/>
                 </div>
               );
@@ -36,9 +36,9 @@ export default function StartupProject() {
 }
 
 function ReturnImage(props){
-  if(props.name=="visipurs"){
+  if(props.name==="visipurs"){
     return  <img alt="visipurs" src={Visipurs}></img>;
-  } else if(props.name=="partnersbond"){
+  } else if(props.name==="partnersbond"){
     return <img alt="partnersbond" src={Partnersbond}></img>;
   }else{
     return  <img alt="visipurs" src={Visipurs}></img>;

@@ -19,6 +19,7 @@ export default function Patents() {
               <BlogCard
                 key={index}
                 blog={{
+                  url: patent.url,
                   title: patent.title,
                   description: patent.description
                 }}

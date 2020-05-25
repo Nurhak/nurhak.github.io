@@ -5,7 +5,7 @@ export default function BlogCard({ blog }) {
   return (
     <div>
       <div className="blog-container">
-        <a className="blog-card" href="#blog" >
+        <a className="blog-card" href={blog.url} target="_blank" rel="noopener noreferrer">
           <h3 className="blog-title">{blog.title}</h3>
           <p className="small">{blog.description}</p>
           <div className="go-corner" >

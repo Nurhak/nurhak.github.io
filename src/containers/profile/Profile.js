@@ -10,13 +10,13 @@ export default function Profile() {
   function setProfileFunction(array) {
     setrepo(array);
   }
-  function getProfileData() {
-    const client=axios.get("https://api.github.com/users/"+openSource.githubUserName)
-      .then(function(response){
-            setProfileFunction(response.data);
-    });
-  }
   useEffect(() => {
+    const getProfileData = () => {
+      axios.get("https://api.github.com/users/"+openSource.githubUserName)
+        .then(function(response){
+              setProfileFunction(response.data);
+      });
+    };
     getProfileData();
   }, []);
   if (openSource.showGithubProfile === "true"){
