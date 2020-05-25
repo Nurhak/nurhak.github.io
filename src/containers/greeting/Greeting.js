@@ -13,7 +13,7 @@ export default function Greeting() {
       <div className="greeting-main">
         <div className="greeting-text-div">
           <div>
-            <h1 className="greeting-text">
+            <h1 className="greeting-text typewriter">
               {" "}
               {greeting.title}
               {" "}

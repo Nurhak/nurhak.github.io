@@ -38,8 +38,7 @@
   line-height: normal;
 }
 .header .logo-name {
-  font-family: 'Agustina Regular';
-  font-weight: bold;
+  font: 400 xxx-large 'Cookie', Helvetica, sans-serif;
   padding: 0 10px;
 }
 
