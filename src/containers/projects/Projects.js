@@ -6,6 +6,7 @@ import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
 import Button from "../../components/button/Button";
 import { openSource, socialMediaLinks } from "../../portfolio";
 import { Fade } from "react-reveal";
+import emoji from "react-easy-emoji";
 
 export default function Projects() {
   const [repo, setrepo] = useState([]);
@@ -69,7 +70,7 @@ export default function Projects() {
   return (
     <Fade bottom duration={1000} distance="20px">
     <div className="main" id="opensource">
-      <h1 className="project-title">Open Source Projects</h1>
+      <h1 className="project-title ">{emoji("Open Source Projects 🧑‍💻")}</h1>
       <div className="repo-cards-div-main">
         {repo.map((v, i) => {
           return <GithubRepoCard repo={v} key={v.node.id} />;

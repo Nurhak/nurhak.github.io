@@ -47,9 +47,11 @@
     .skills-bar {
         line-height: 4rem;
     }
-    .skills-image {
-        display: none;
-        order: 2;
+    .skills-image > img {
+        margin-left: 100px;
+        margin-top: 40px;
+        max-width: 80%;
+        height: auto;
     }
 }
 
@@ -62,7 +64,6 @@
         margin: 20px;
     }
     .skills-image {
-        display: none;
         order: 2;
     }
 }

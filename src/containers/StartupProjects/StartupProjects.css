@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  width: 90%;
 }
 
 .startup-projects-main > * {
@@ -55,5 +56,8 @@
   .saaya-health-div {
     flex: 0 0 50%;
     max-width: 50%;
+  }
+  .skills-image > img {
+    margin-left: 30px;
   }
 }

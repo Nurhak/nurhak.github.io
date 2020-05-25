@@ -1,12 +1,8 @@
-# Nurhak ALTIN Portfolio [![Netlify Status](https://api.netlify.com/api/v1/badges/9f98fa5a-31d4-4c7e-8258-34c86e7b787c/deploy-status)](https://app.netlify.com/sites/confident-kare-3ca8ee/deploys) (https://www.nurhakaltin.com)
+# Nurhak ALTIN Portfolio [![Netlify Status](https://api.netlify.com/api/v1/badges/9f98fa5a-31d4-4c7e-8258-34c86e7b787c/deploy-status)](https://app.netlify.com/sites/confident-kare-3ca8ee/deploys)
 
-Inherited from https://github.com/saadpasta/developerFolio
+https://www.nurhakaltin.com
 
-<p align="center"> 
-  <kbd>
-<img src="https://user-images.githubusercontent.com/49693820/81296489-999abf00-908f-11ea-9442-75e8f0ecf65d.gif"></img>
-  </kbd>
-</p>
+![Nurhak Portfolio](src/assests/images/nurhak_portfolio.gif)
 
 ## Getting Started 🚀
 
@@ -27,4 +23,4 @@ git@2.17.1 or higher
 2) RUN IMAGE: docker run -p 3000:3000 developerfolio:latest
 ```
 
-
+Inherited from https://github.com/saadpasta/developerFolio
