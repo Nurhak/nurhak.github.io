@@ -186,7 +186,7 @@ const achievementSection = {
       subtitle: "Enterprise Design Thinking Practitioner",
       image: "https://images.youracclaim.com/size/680x680/images/bc08972c-3c7d-4b99-82a0-c94bcca36674/Badges_v8-07%2BPractitioner.png",
       footerLink: [
-        { name: "Certification", url: "https://images.youracclaim.com/size/680x680/images/bc08972c-3c7d-4b99-82a0-c94bcca36674/Badges_v8-07%2BPractitioner.png" }
+        { name: "Certification", url: "https://www.youracclaim.com/badges/d2c3c6f5-7762-4b3b-988e-f68b2f18f75a" }
       ]
     }
   ]
