@@ -1,7 +1,7 @@
 .meter { 
     height: 20px;
     position: relative;
-    background: rgb(243, 239, 239);
+    background: #d0cde1;
     -moz-border-radius: 25px;
     -webkit-border-radius: 25px;
     border-radius: 25px;
