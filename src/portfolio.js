@@ -94,6 +94,34 @@ https://fontawesome.com/icons?d=gallery */
   ]
 };
 
+const workExperiences = {
+  title: emoji("Experiences 💻"),
+  viewExperiences: true, //Set it to true to show workExperiences Section
+  experience: [
+    {
+      role: "Platform Design Engineer",  
+      company: "Netaş",
+      companylogo:  require("./assests/images/netas_logo.jpeg"),
+      date: "Nov 2018 – Present",
+      desc: "Developing highly interactive system administration tools with Perl, Bash, and customizing RedHat OS. Creating CI/CD environments with Jenkins, Git, Artifactory. Developing a test framework with Python."
+    },
+    {
+      role: "Computer Vision Engineer",   
+      company: "Bites",
+      companylogo: require("./assests/images/bites_savunma_logo.png"),
+      date: "July 2018 – Oct 2018",
+      desc: "Developing and implementing low-level computer vision algorithms and high-level AR applications with C++, Qt."
+    },
+    {
+      role: "R&D Engineer",  
+      company: "Prometeon",
+      companylogo: require("./assests/images/logo-prometeon.jpeg"),
+      date: "Mar 2017 - July 2018",
+      desc: "Developing signal processing and computer vision application for factory-wide measurement tools with C++, Qt."
+    },
+  ]
+};
+
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
@@ -273,4 +301,4 @@ const twitterDetails = {
   userName : "twitter"//Replace "twitter" with your twitter username without @
   
 };
-export { greeting, socialMediaLinks, skillsSection, techStack, openSource, bigProjects, achievementSection, blogSection, talkSection, patentsSection, contactInfo , twitterDetails};
+export { greeting, socialMediaLinks, skillsSection, techStack, workExperiences, openSource, bigProjects, achievementSection, blogSection, talkSection, patentsSection, contactInfo , twitterDetails};
