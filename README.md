@@ -23,4 +23,4 @@ git@2.17.1 or higher
 2) RUN IMAGE: docker run -p 3000:3000 developerfolio:latest
 ```
 
-Inherited from https://github.com/saadpasta/developerFolio
+Inherited from https://github.com/saadpasta/developerFolio.
