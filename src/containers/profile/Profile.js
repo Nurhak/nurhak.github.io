@@ -51,7 +51,7 @@ export default function Profile() {
     if (openSource.showGithubProfile === "true") {
       getProfileData();
     }
-  }, []);
+  });
 if (openSource.display && openSource.showGithubProfile === "true" && !(typeof prof === 'string' || prof instanceof String)){  
     return (
       <Suspense fallback={renderLoader()}>
