@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect, useContext, Suspense, lazy } from "react";
 import ApolloClient from "apollo-boost";
 import { gql } from "apollo-boost";
@@ -26,7 +25,7 @@ export default function Projects() {
       request: (operation) => {
         operation.setContext({
           headers: {
-            authorization: `Bearer ${openSource.githubConvertedToken}`,
+            authorization: `Bearer ${atob(openSource.githubConvertedToken)}`,
           },
         });
       },
@@ -65,6 +64,7 @@ export default function Projects() {
       })
       .then((result) => {
         setrepoFunction(result.data.user.pinnedItems.edges);
+        console.log(result);
       })
       .catch(function (error) {
         console.log(error);

@@ -7,9 +7,9 @@
   margin-bottom: 30px;
 }
 
-.starup-project-image > img {
+.startup-project-image > img {
   max-width: 100%;
-  height: auto;
+  height: 80px;
 }
 
 .project-card-head {
@@ -22,7 +22,6 @@
 
 .startup-project-text {
   display: flex;
-  justify-content: space-between;
 }
 
 .project-card-description {
@@ -35,6 +34,7 @@
 .saaya-health-div,
 .nextu-div {
   cursor: pointer;
+  padding-left: 50px;
 }
 
 @media (max-width: 768px) {

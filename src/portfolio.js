@@ -204,11 +204,11 @@ const bigProjects = {
   subtitle: 'SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH',
   projects: [
     {
-      image: "partnersbond",
+      image: require('./assets/images/partnersbond_logo.png'),
       link: "http://partnersbond.com/"
     },
     {
-      image: "visipurs",
+      image: require('./assets/images/visipurs_logo.png'),
       link: "http://visipurs.com/"
     }
   ],
