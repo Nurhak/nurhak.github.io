@@ -4,8 +4,13 @@ import BlogCard from "../../components/blogCard/BlogCard";
 import { blogSection } from "../../portfolio";
 import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import { useDispatch } from 'react-redux';
+import { fetchPosts } from '../../redux/actions/blogActions';
+
 export default function Blogs() {
   const { isDark } = useContext(StyleContext);
+  const dispatch = useDispatch();
+  dispatch(fetchPosts());
   if (!blogSection.display) {
     return null;
   }
