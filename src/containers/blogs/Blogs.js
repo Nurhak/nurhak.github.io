@@ -5,12 +5,12 @@ import { blogSection } from "../../portfolio";
 import { Fade } from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import { useDispatch } from 'react-redux';
-import { fetchPosts } from '../../redux/actions/blogActions';
+import blogServices from '../../services/blog';
 
 export default function Blogs() {
   const { isDark } = useContext(StyleContext);
   const dispatch = useDispatch();
-  dispatch(fetchPosts());
+  dispatch(blogServices.fetchPosts());
   if (!blogSection.display) {
     return null;
   }

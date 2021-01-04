@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { SET_POSTS } from '../constants/actionTypes';
 
 const INIT_STATE = {

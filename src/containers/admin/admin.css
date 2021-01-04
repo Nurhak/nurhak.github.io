@@ -1,0 +1,16 @@
+.admin_container{
+  flex-direction: column;
+  justify-content: center;
+}
+
+.admin_container .row{
+  text-align: center;
+  justify-content: center;
+  margin:0;
+}
+
+.admin_container .col{
+  display:inline-block;
+  vertical-align: middle;
+  float: none;
+}
