@@ -72,6 +72,10 @@ softwareSkills: [
     fontAwesomeClassname: "fab fa-react"
   },
   {
+    skillName: "angular",
+    fontAwesomeClassname: "fab fa-angular"
+  },
+  {
     skillName: "npm",
     fontAwesomeClassname: "fab fa-npm"
   },
@@ -132,7 +136,7 @@ const techStack = {
     {
       ID:1,
       Stack:"OOP",
-      progressPercentage: "80%"
+      progressPercentage: "85%"
     },
     {
       ID:2,
@@ -142,17 +146,17 @@ const techStack = {
     {
       ID:3,
       Stack: "Linux",
-      progressPercentage: "90%"
+      progressPercentage: "95%"
     },
     {
       ID:4,
       Stack: "CI/CD",
-      progressPercentage: "90%"
+      progressPercentage: "80%"
     },
     {
       ID:5,
       Stack: "Frontend Development",
-      progressPercentage: "60%"
+      progressPercentage: "95%"
     },
   ],
   displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -163,6 +167,13 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
    experience: [
+    {
+      role: "Software Engineer",  
+      company: "ICT Group",
+      companylogo:  require("./assets/images/ict_logo.jpeg"),
+      date: "Dec 2020 – Present",
+      desc: "Developing web applications and cloud solutions."
+    },
     {
       role: "Platform Design Engineer",  
       company: "Netaş",
