@@ -167,11 +167,18 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
    experience: [
+         {
+      role: "Senior Frontend Engineer",  
+      company: "Kees De Boekhouder",
+      companylogo:  require("./assets/images/kees-logo.png"),
+      date: "Sep 2021 – Present",
+      desc: "Developing web applications to allow customers manage their tax statement."
+    },
     {
       role: "Software Engineer",  
       company: "ICT Group",
       companylogo:  require("./assets/images/ict_logo.jpeg"),
-      date: "Dec 2020 – Present",
+      date: "Dec 2020 – Sep 2021",
       desc: "Developing web applications and cloud solutions."
     },
     {
@@ -236,6 +243,15 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "Professional Scrum Master 1",
+      subtitle: "Scrum.org | nurhakaltin@gmail.com",
+      imageType: "local",
+      image: require('./assets/images/psmi.png'),
+      footerLink: [
+        { name: "Certification", url: "https://www.scrum.org/certificates/664467" }
+      ]
+    }, 
+    {
       title: "Second Prize of TUBITAK 2241 Competition",
       subtitle: "A Control System and Method Used in the Rubber Sector named graduation thesis has won the competition in Industrial Final Thesis field.",
       image:
@@ -256,7 +272,6 @@ const achievementSection = {
 
     {
       title: "Enterprise Design Thinking Practitioner",
-      subtitle: "Enterprise Design Thinking Practitioner",
       image: "https://images.youracclaim.com/size/680x680/images/bc08972c-3c7d-4b99-82a0-c94bcca36674/Badges_v8-07%2BPractitioner.png",
       footerLink: [
         { name: "Certification", url: "https://www.youracclaim.com/badges/d2c3c6f5-7762-4b3b-988e-f68b2f18f75a" }

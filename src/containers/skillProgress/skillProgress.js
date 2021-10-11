@@ -7,6 +7,9 @@ import DisplayLottie from '../../components/displayLottie/DisplayLottie';
 
 export default function StackProgress() {
     if(techStack.viewSkillBars){
+        techStack.experience = techStack.experience.sort(
+            (a, b) => a.ID - b.ID
+        );
         return (
             <Fade bottom duration={1000} distance="20px">
             <div className="skills-container">
