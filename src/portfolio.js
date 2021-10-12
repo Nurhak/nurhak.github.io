@@ -11,7 +11,7 @@ const illustration = {
 const greeting = {
   username: "Nurhak ALTIN",
   title: "Hi all, I'm Nurhak",
-  subTitle: emoji("A passionate Software Developer, Entrepreneur, DevOps Engineer 🚀 having an experience of building Web and Computer Vision applications. Creating CI/CD environments."),
+  subTitle: emoji("A passionate Software Engineer, Entrepreneur 🚀 having an experience of building web applications and creating CI/CD environments."),
   resumeLink: "https://drive.google.com/file/d/1h45oKnWZYqTaiS2JK8w_KGWNWYCAdfoh/view?usp=sharing",
   displayGreeting: true, // Set false to hide this section, defaults to true
 };
@@ -33,35 +33,25 @@ const skillsSection = {
   title: "What i do",
   subTitle: "CRAZY SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
+    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
+    emoji("⚡ Golang lover"),
     emoji("⚡ Creating highly interactive tools for system adminstrations."),
     emoji("⚡ Creating CI/CD envrionments for the different type of applications."),
-    emoji("⚡ Migration of legacy VCS to the git environment."),
-    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
 softwareSkills: [
-  {
-    skillName: "++",
-    fontAwesomeClassname: "fab fa-cuttlefish"
+   {
+    skillName: "Go",
+    imageType: "local",
+    imageSrc: require("./assets/images/go-language-official.svg"),
   },
-  {
-    skillName: "java",
-    fontAwesomeClassname: "fab fa-java"
-  },
-  {
-    skillName: "linux",
-    fontAwesomeClassname: "fab fa-linux"
-  },
-  {
-    skillName: "linux",
-    fontAwesomeClassname: "fab fa-redhat"
-  },
-  {
-    skillName: "sass",
-    fontAwesomeClassname: "fab fa-sass"
+ {
+    skillName: "TypeScript",
+    imageType: "local",
+    imageSrc: require("./assets/images/ts-icon.svg"),
   },
   {
     skillName: "JavaScript",
@@ -74,10 +64,6 @@ softwareSkills: [
   {
     skillName: "angular",
     fontAwesomeClassname: "fab fa-angular"
-  },
-  {
-    skillName: "npm",
-    fontAwesomeClassname: "fab fa-npm"
   },
   {
     skillName: "aws",
@@ -98,7 +84,23 @@ softwareSkills: [
   {
     skillName: "css3",
     fontAwesomeClassname: "fab fa-css3-alt"
-  }
+  },
+  {
+    skillName: "C++",
+    fontAwesomeClassname: "fab fa-cuttlefish"
+  },
+  {
+    skillName: "java",
+    fontAwesomeClassname: "fab fa-java"
+  },
+  {
+    skillName: "linux",
+    fontAwesomeClassname: "fab fa-linux"
+  },
+  {
+    skillName: "Redhat",
+    fontAwesomeClassname: "fab fa-redhat"
+  },
 ], 
   display:true
 };
@@ -134,14 +136,19 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      ID:1,
+      ID:2,
       Stack:"OOP",
       progressPercentage: "85%"
     },
     {
-      ID:2,
+      ID:6,
       Stack: "C++",  //Insert stack or technology you have experience in
       progressPercentage: "90%"  //Insert relative proficiency in percentage
+    },
+    {
+      ID:5,
+      Stack: "Golang",
+      progressPercentage: "35%"
     },
     {
       ID:3,
@@ -154,7 +161,7 @@ const techStack = {
       progressPercentage: "80%"
     },
     {
-      ID:5,
+      ID:1,
       Stack: "Frontend Development",
       progressPercentage: "95%"
     },

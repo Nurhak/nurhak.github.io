@@ -9,10 +9,10 @@ export default function SoftwareSkill() {
       <div className="software-skills-main-div">
         <ul className="dev-icons">
           {skillsSection.softwareSkills.map((skills,i) => {
-            if(skills.imageType && skills.imageType === "svg"){
+            if(skills.imageType && skills.imageType === "local"){
               return (
                 <li key={i} className="software-skill-inline" name={skills.skillName}>
-                  <img src={GoIcon} alt={skills.skillName}/>
+                  <img src={skills.imageSrc.default} alt={skills.skillName}/>
                   <p>{skills.skillName}</p>
                 </li>
               );

@@ -13,6 +13,11 @@
   margin-bottom: 20px;
 }
 
+.software-skill-inline>img {
+  height: 42px;
+  width: 42px;
+}
+
 .software-skill-inline > i {
   color: #868e96;
 }
