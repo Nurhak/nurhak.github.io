@@ -1,6 +1,5 @@
 import React from "react";
 import "./SoftwareSkill.css";
-import GoIcon from "../../assets/images/go-language-official.svg";
 import { skillsSection } from "../../portfolio";
 
 export default function SoftwareSkill() {
