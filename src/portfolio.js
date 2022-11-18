@@ -11,8 +11,8 @@ const illustration = {
 const greeting = {
   username: "Nurhak ALTIN",
   title: "Hi all, I'm Nurhak",
-  subTitle: emoji("A passionate Software Engineer, Entrepreneur 🚀 having an experience of building web applications and creating CI/CD environments."),
-  resumeLink: "https://drive.google.com/file/d/1h45oKnWZYqTaiS2JK8w_KGWNWYCAdfoh/view?usp=sharing",
+  subTitle: emoji("A passionate Senior Software Engineer, Entrepreneur 🚀 having an experience of building web applications and creating CI/CD environments."),
+  resumeLink: "https://nurhak.notion.site/nurhak/Resume-f37aa8ca888b4e409a9d048b473b1dda",
   displayGreeting: true, // Set false to hide this section, defaults to true
 };
 
@@ -34,7 +34,6 @@ const skillsSection = {
   subTitle: "CRAZY SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
-    emoji("⚡ Golang lover"),
     emoji("⚡ Creating highly interactive tools for system adminstrations."),
     emoji("⚡ Creating CI/CD envrionments for the different type of applications."),
   ],
@@ -43,11 +42,6 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
 softwareSkills: [
-   {
-    skillName: "Go",
-    imageType: "local",
-    imageSrc: require("./assets/images/go-language-official.svg"),
-  },
  {
     skillName: "TypeScript",
     imageType: "local",
@@ -70,28 +64,8 @@ softwareSkills: [
     fontAwesomeClassname: "fab fa-aws"
   },
   {
-    skillName: "python",
-    fontAwesomeClassname: "fab fa-python"
-  },
-  {
     skillName: "docker",
     fontAwesomeClassname: "fab fa-docker"
-  },
-  {
-    skillName: "html-5",
-    fontAwesomeClassname: "fab fa-html5"
-  },
-  {
-    skillName: "css3",
-    fontAwesomeClassname: "fab fa-css3-alt"
-  },
-  {
-    skillName: "C++",
-    fontAwesomeClassname: "fab fa-cuttlefish"
-  },
-  {
-    skillName: "java",
-    fontAwesomeClassname: "fab fa-java"
   },
   {
     skillName: "linux",
@@ -100,6 +74,10 @@ softwareSkills: [
   {
     skillName: "Redhat",
     fontAwesomeClassname: "fab fa-redhat"
+  },
+  {
+    skillName: "python",
+    fontAwesomeClassname: "fab fa-python"
   },
 ], 
   display:true
@@ -136,34 +114,29 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      ID:2,
-      Stack:"OOP",
-      progressPercentage: "85%"
-    },
-    {
-      ID:6,
-      Stack: "C++",  //Insert stack or technology you have experience in
-      progressPercentage: "90%"  //Insert relative proficiency in percentage
-    },
-    {
       ID:5,
       Stack: "Golang",
-      progressPercentage: "35%"
+      progressPercentage: "10%"
     },
     {
       ID:3,
       Stack: "Linux",
-      progressPercentage: "95%"
+      progressPercentage: "90%"
     },
     {
       ID:4,
-      Stack: "CI/CD",
+      Stack: "DevOps",
       progressPercentage: "80%"
     },
     {
       ID:1,
-      Stack: "Frontend Development",
+      Stack: "Frontend",
       progressPercentage: "95%"
+    },
+    {
+      ID:1,
+      Stack: "Fullstack",
+      progressPercentage: "70%"
     },
   ],
   displayCodersrank: false, // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -182,28 +155,28 @@ const workExperiences = {
       desc: "Developing web applications to allow customers manage their tax statement."
     },
     {
-      role: "Software Engineer",  
+      role: "Senior Software Engineer",  
       company: "ICT Group",
       companylogo:  require("./assets/images/ict_logo.jpeg"),
       date: "Dec 2020 – Sep 2021",
       desc: "Developing web applications and cloud solutions."
     },
     {
-      role: "Platform Design Engineer",  
+      role: "Senior Software Engineer",  
       company: "Netaş",
       companylogo:  require("./assets/images/netas_logo.jpeg"),
       date: "Nov 2018 – Oct 2020",
       desc: "Developing highly interactive system administration tools with Perl, Bash, and customizing RedHat OS. Creating CI/CD environments with Jenkins, Git, Artifactory. Developing a test framework with Python."
     },
     {
-      role: "Computer Vision Engineer",   
+      role: "Software Engineer",   
       company: "Bites",
       companylogo: require("./assets/images/bites_savunma_logo.png"),
       date: "July 2018 – Oct 2018",
       desc: "Developing and implementing low-level computer vision algorithms and high-level AR applications with C++, Qt."
     },
     {
-      role: "R&D Engineer",  
+      role: "Software Engineer",  
       company: "Prometeon",
       companylogo: require("./assets/images/logo-prometeon.jpeg"),
       date: "Mar 2017 - July 2018",
@@ -230,11 +203,19 @@ const bigProjects = {
   projects: [
     {
       image: require('./assets/images/partnersbond_logo.png'),
-      link: "http://partnersbond.com/"
+      link: "https://partnersbond.com/"
     },
     {
       image: require('./assets/images/visipurs_logo.png'),
-      link: "http://visipurs.com/"
+      link: "https://visipurs.com/"
+    },
+    {
+      image: require('./assets/images/clpads_logo.jpg'),
+      link: "https://clpads.com/"
+    },
+    {
+      image: require('./assets/images/arc_logo.jpg'),
+      link: "https://arcavukatlik.com/"
     }
   ],
   display: true, // Set false to hide this section, defaults to true
