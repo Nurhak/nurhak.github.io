@@ -91,7 +91,7 @@ const educationInfo = {
     {
       schoolName: 'Kocaeli University',
       logo: require('./assets/images/kou_logo.png'),
-      subHeader: 'Bachelor Degree in Electronics and Telecommunication Enginnerind',
+      subHeader: 'Bachelor Degree in Electronics and Telecommunication Engineering',
       duration: 'September 2013 - April 2018',
       desc: 'Participated in the research of Computer Vision and AI and published 1 paper.',
       descBullets: [
