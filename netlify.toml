@@ -1,4 +1,7 @@
-# The site is a single static page in /site — no build step needed.
+# The site is a single static page in /site. Using it as the base directory
+# means Netlify finds no package.json there and skips the old (broken)
+# Create React App install entirely.
 [build]
+  base = "site"
+  publish = "."
   command = "echo 'static site, nothing to build'"
-  publish = "site"
