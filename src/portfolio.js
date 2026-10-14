@@ -11,7 +11,7 @@ const illustration = {
 const greeting = {
   username: "Nurhak ALTIN",
   title: "Hi all, I'm Nurhak",
-  subTitle: emoji("A passionate Senior Software Engineer, Entrepreneur 🚀 having an experience of building web applications and creating CI/CD environments."),
+  subTitle: emoji("Lead Application Developer & Applied AI Engineer 🤖 I build AI agents that do real work in production — from multi-agent development pipelines to the product UIs around them. 8+ years across web, cloud, computer vision and embedded."),
   resumeLink: "https://nurhak.notion.site/nurhak/Resume-f37aa8ca888b4e409a9d048b473b1dda",
   displayGreeting: true, // Set false to hide this section, defaults to true
 };
@@ -30,12 +30,13 @@ const socialMediaLinks = {
 
 
 const skillsSection = {
-  title: "What i do",
-  subTitle: "CRAZY SOFTWARE DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What I do",
+  subTitle: "APPLIED AI ENGINEER WHO SHIPS AGENTS, PLATFORMS AND THE PRODUCTS AROUND THEM",
   skills: [
-    emoji("⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"),
-    emoji("⚡ Creating highly interactive tools for system adminstrations."),
-    emoji("⚡ Creating CI/CD envrionments for the different type of applications."),
+    emoji("⚡ Design and build agentic systems: orchestrated multi-agent workflows with Claude Agent SDK, Mastra and Inngest, human approval gates and LLM-as-judge evaluation"),
+    emoji("⚡ Run AI in production: Langfuse tracing, cost visibility per feature, Amazon Bedrock and hybrid local + cloud models"),
+    emoji("⚡ Lead frontend architecture: TypeScript, React and Next.js on Cloudflare Workers, configuration-driven UI engines, enterprise auth (SSO, SCIM)"),
+    emoji("⚡ Go all the way down the stack: computer vision, Rust, ESP32 firmware and KiCad PCB design"),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -56,8 +57,8 @@ softwareSkills: [
     fontAwesomeClassname: "fab fa-react"
   },
   {
-    skillName: "angular",
-    fontAwesomeClassname: "fab fa-angular"
+    skillName: "nodejs",
+    fontAwesomeClassname: "fab fa-node-js"
   },
   {
     skillName: "aws",
@@ -72,12 +73,16 @@ softwareSkills: [
     fontAwesomeClassname: "fab fa-linux"
   },
   {
-    skillName: "Redhat",
-    fontAwesomeClassname: "fab fa-redhat"
-  },
-  {
     skillName: "python",
     fontAwesomeClassname: "fab fa-python"
+  },
+  {
+    skillName: "git",
+    fontAwesomeClassname: "fab fa-git-alt"
+  },
+  {
+    skillName: "swift",
+    fontAwesomeClassname: "fab fa-swift"
   },
 ], 
   display:true
@@ -114,28 +119,28 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      ID:5,
-      Stack: "Golang",
-      progressPercentage: "10%"
-    },
-    {
-      ID:3,
-      Stack: "Linux",
-      progressPercentage: "90%"
-    },
-    {
-      ID:4,
-      Stack: "DevOps",
-      progressPercentage: "80%"
-    },
-    {
       ID:1,
-      Stack: "Frontend",
+      Stack: "Frontend Architecture",
       progressPercentage: "95%"
     },
     {
-      ID:1,
-      Stack: "Fullstack",
+      ID:2,
+      Stack: "AI Agents & LLMOps",
+      progressPercentage: "85%"
+    },
+    {
+      ID:3,
+      Stack: "Fullstack & Cloud",
+      progressPercentage: "85%"
+    },
+    {
+      ID:4,
+      Stack: "Linux & DevOps",
+      progressPercentage: "80%"
+    },
+    {
+      ID:5,
+      Stack: "Embedded & Computer Vision",
       progressPercentage: "70%"
     },
   ],
@@ -147,36 +152,48 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
    experience: [
-         {
-      role: "Senior Frontend Engineer",  
+    {
+      role: "Lead Application Developer & Applied AI Engineer",
+      company: "APS Group",
+      companylogo: require("./assets/images/aps-logo.svg"),
+      date: "Feb 2023 – Present",
+      desc: "Leading development of Cohero, APS Group's AI-powered omnichannel content platform.",
+      descBullets: [
+        "Designing an agentic delivery pipeline: specialised AI agents for coding, review and testing, with confidence-based human approval and per-feature cost tracking",
+        "Next.js/TypeScript on Cloudflare Workers with a GraphQL/REST backend, built to enterprise security and accessibility standards",
+        "As Senior Application Engineer (2023–24): built a configuration-driven UI engine that renders fully customisable interfaces in React, and helped standardise how frontend applications are structured",
+      ],
+    },
+    {
+      role: "Senior Frontend Developer",
       company: "Kees De Boekhouder",
       companylogo:  require("./assets/images/kees-logo.png"),
-      date: "Sep 2021 – Present",
+      date: "Sep 2021 – Mar 2023",
       desc: "Developing web applications to allow customers manage their tax statement."
     },
     {
-      role: "Senior Software Engineer",  
+      role: "Software Engineer",
       company: "ICT Group",
       companylogo:  require("./assets/images/ict_logo.jpeg"),
       date: "Dec 2020 – Sep 2021",
       desc: "Developing web applications and cloud solutions."
     },
     {
-      role: "Senior Software Engineer",  
+      role: "Design Application Engineer",
       company: "Netaş",
       companylogo:  require("./assets/images/netas_logo.jpeg"),
       date: "Nov 2018 – Oct 2020",
       desc: "Developing highly interactive system administration tools with Perl, Bash, and customizing RedHat OS. Creating CI/CD environments with Jenkins, Git, Artifactory. Developing a test framework with Python."
     },
     {
-      role: "Software Engineer",   
+      role: "R&D Assistant Specialist",
       company: "Bites",
       companylogo: require("./assets/images/bites_savunma_logo.png"),
       date: "July 2018 – Oct 2018",
       desc: "Developing and implementing low-level computer vision algorithms and high-level AR applications with C++, Qt."
     },
     {
-      role: "Software Engineer",  
+      role: "R&D Engineer Assistant",
       company: "Prometeon",
       companylogo: require("./assets/images/logo-prometeon.jpeg"),
       date: "Mar 2017 - July 2018",
@@ -217,6 +234,48 @@ const bigProjects = {
       image: require('./assets/images/arc_logo.jpg'),
       link: "https://arcavukatlik.com/"
     }
+  ],
+  display: true, // Set false to hide this section, defaults to true
+};
+
+// Selected AI work — agentic development and multi-model projects
+
+const aiProjects = {
+  title: "Selected AI Work",
+  subtitle: "AGENTIC SYSTEMS AND MULTI-MODEL PRODUCTS I'M BUILDING",
+  projects: [
+    {
+      title: "AI Software Agency Platform",
+      desc: "Agent platform that runs software work end-to-end: Mastra and Inngest durable workflows orchestrating Claude Agent SDK workers on self-hosted nodes, traced in Langfuse. Multi-tenant auth with SSO step-up and SCIM.",
+      tags: ["Claude Agent SDK", "Mastra", "Inngest", "Langfuse", "Cloudflare"],
+    },
+    {
+      title: "Hybrid Local + Cloud AI Infrastructure",
+      desc: "Self-hosted AI stack combining local models (32B coding models via Ollama on Apple Silicon) with Claude. A Telegram bot hands natural-language tasks to Claude Code with human approval gates; a Python agent automates a media pipeline.",
+      tags: ["Ollama", "Claude Code", "Python", "Docker"],
+    },
+    {
+      title: "HomeHub",
+      desc: "React Native / Expo property-search app built with a multi-agent Claude Code workflow — parallel agents for features, review and testing.",
+      tags: ["React Native", "Expo", "Multi-agent", "TanStack Query"],
+    },
+    {
+      title: "KMklopt",
+      status: "In development",
+      desc: "Native iOS + CarPlay mileage log for Dutch lease drivers, with AI reconstruction of past trips from known routines and smart recommendations.",
+      tags: ["Swift", "CarPlay", "AI"],
+    },
+    {
+      title: "Personal Finance Agents",
+      status: "In development",
+      desc: "Agents that analyse spending, detect subscriptions and contracts, research cheaper alternatives and draft quote requests automatically.",
+      tags: ["AI Agents", "Node.js", "Automation"],
+    },
+    {
+      title: "Vehicle Diagnostics Platform",
+      desc: "Rust diagnostic core with a custom ESP32-S3 CAN-bus adapter built on open hardware.",
+      tags: ["Rust", "ESP32-S3", "CAN bus"],
+    },
   ],
   display: true, // Set false to hide this section, defaults to true
 };
@@ -329,6 +388,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle: "Discuss a project or just want to say hi? My Inbox is open for all.",
+  bio: "Lead Application Developer · Applied AI Engineer · Builder", // Shown in the contact card instead of the GitHub bio
   number: "+31617329405",
   email_address: "nurhakaltin@gmail.com"
 };
@@ -350,6 +410,7 @@ export {
   workExperiences,
   openSource,
   bigProjects,
+  aiProjects,
   achievementSection,
   blogSection,
   talkSection,

@@ -12,6 +12,7 @@ import {
   blogSection,
   talkSection,
   achievementSection,
+  aiProjects,
 } from '../../portfolio';
 
 function Header() {
@@ -48,6 +49,11 @@ function Header() {
           {viewExperience && (
             <li>
               <a href="#experience">Work Experiences</a>
+            </li>
+          )}
+          {aiProjects.display && (
+            <li>
+              <a href="#ai-work">AI Work</a>
             </li>
           )}
           {viewOpenSource && (

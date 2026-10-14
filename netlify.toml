@@ -1,0 +1,11 @@
+# Pin the toolchain this 2021-era Create React App setup needs, so Netlify's
+# newer default Node version doesn't break the build.
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "16"
+  NPM_FLAGS = "--ignore-scripts"
+  DISABLE_NEW_JSX_TRANSFORM = "true"
+  CI = "false"
