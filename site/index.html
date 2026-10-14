@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nurhak Altın</title>
+<meta name="description" content="Nurhak Altın — Lead Application Developer and Applied AI Engineer in Eindhoven. Agentic AI, multi-agent systems, LLMOps and frontend architecture.">
+<meta property="og:title" content="Nurhak Altın — Applied AI Engineer">
+<meta property="og:description" content="Lead Application Developer and Applied AI Engineer in Eindhoven.">
+<meta property="og:image" content="https://www.nurhakaltin.com/img/nurhak.jpg">
+<link rel="icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: one narrow reading column, sections separated by hairlines; type does the work, no decoration. */
+  :root {
+    --bg: #ffffff;
+    --ink: #111111;
+    --ink-2: #4a4a4a;
+    --ink-3: #8a8a8a;
+    --rule: #e8e8e8;
+    --chip: #f4f4f4;
+    --font-body: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--ink-3); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--ink); }
+  a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 2px; }
+  img { max-width: 100%; display: block; }
+
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-left: max(20px, env(safe-area-inset-left, 0px));
+    padding-right: max(20px, env(safe-area-inset-right, 0px));
+  }
+
+  header.top {
+    padding-block: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .wordmark { font-weight: 600; text-decoration: none; letter-spacing: -0.01em; }
+  nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; flex-wrap: wrap; }
+  nav a { text-decoration: none; color: var(--ink-2); font-size: 15px; }
+  nav a:hover { color: var(--ink); }
+
+  .hero { padding-block: 40px 56px; display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: start; }
+  .hero h1 {
+    font-size: clamp(32px, 6vw, 44px);
+    line-height: 1.1;
+    letter-spacing: -0.025em;
+    font-weight: 600;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  .role { font-size: 18px; color: var(--ink-2); margin: 0 0 20px; }
+  .lede { margin: 0 0 24px; max-width: 34em; }
+  .photo { width: 148px; height: 148px; border-radius: 50%; object-fit: cover; }
+  .links { display: flex; gap: 20px; flex-wrap: wrap; font-size: 15px; }
+  .meta { font-family: var(--font-mono); font-size: 13px; color: var(--ink-3); margin-top: 20px; }
+
+  section { padding-block: 48px; border-top: 1px solid var(--rule); }
+  .label {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin: 0 0 28px;
+  }
+  h3 { font-size: 18px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
+  p { margin: 0; }
+  .muted { color: var(--ink-2); }
+
+  /* Featured product */
+  .feature-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+  .shots {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin: 24px 0 16px;
+  }
+  .shots figure { margin: 0; }
+  .shots img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--rule); }
+  @media (max-width: 560px) {
+    .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .tag { font-family: var(--font-mono); font-size: 12px; background: var(--chip); color: var(--ink-2); padding: 2px 8px; border-radius: 4px; }
+
+  /* Project + experience rows */
+  .rows { display: flex; flex-direction: column; gap: 32px; }
+  .row { display: grid; grid-template-columns: 140px minmax(0, 1fr); gap: 20px; }
+  .row .when { font-family: var(--font-mono); font-size: 13px; color: var(--ink-3); padding-top: 3px; font-variant-numeric: tabular-nums; }
+  .row .org { color: var(--ink-2); font-size: 15px; margin: 2px 0 8px; }
+  .row ul { margin: 8px 0 0; padding-left: 18px; color: var(--ink-2); }
+  .row li + li { margin-top: 4px; }
+  .status { font-family: var(--font-mono); font-size: 11px; color: var(--ink-2); border: 1px solid var(--rule); border-radius: 4px; padding: 1px 6px; margin-left: 8px; vertical-align: 2px; white-space: nowrap; }
+  @media (max-width: 560px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero .photo { order: -1; width: 112px; height: 112px; }
+    .row { grid-template-columns: 1fr; gap: 4px; }
+  }
+
+  .list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px; }
+  .list li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 16px; }
+  .list .yr { font-family: var(--font-mono); font-size: 13px; color: var(--ink-3); }
+
+  footer { border-top: 1px solid var(--rule); padding-block: 48px 64px; }
+  footer h2 { font-size: 24px; font-weight: 600; letter-spacing: -0.015em; margin: 0 0 12px; }
+  footer .small { font-size: 13px; color: var(--ink-3); margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <a class="wordmark" href="#">Nurhak Altın</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>I build AI agents that do real work in production.</h1>
+      <p class="role">Lead Application Developer &amp; Applied AI Engineer at APS Group</p>
+      <p class="lede">I lead development on Cohero, APS Group's AI-powered omnichannel content platform, and design agentic workflows where orchestrated agents code, review and test with human approval gates and clear cost visibility. Before AI agents, I worked on computer vision, embedded systems and large frontend platforms. That range is still how I work: from the model to the interface to the hardware.</p>
+      <div class="links">
+        <a href="mailto:nurhakaltin@gmail.com">nurhakaltin@gmail.com</a>
+        <a href="https://www.linkedin.com/in/nurhakaltin/" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Nurhak" rel="noopener">GitHub</a>
+      </div>
+      <p class="meta">Eindhoven, NL · English, Dutch, Turkish</p>
+    </div>
+    <img class="photo" src="img/nurhak.jpg" width="148" height="148" alt="Portrait of Nurhak Altın">
+  </div>
+
+  <section id="work">
+    <p class="label">Selected work</p>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3>Hodierna</h3>
+        <a href="https://hodierna.app" rel="noopener">hodierna.app</a>
+      </div>
+      <p class="muted">An offline-first logbook for a newborn's first months. Every entry is written to the device first and synced in the background, so it works at 3am on one bar of signal. Parents share one book, each with their own access level.</p>
+      <div class="shots">
+        <figure><img src="img/hodierna-day.jpg" width="440" height="956" loading="lazy" alt="Hodierna day view listing feeds, sleep and diapers"></figure>
+        <figure><img src="img/hodierna-patterns.jpg" width="440" height="956" loading="lazy" alt="Hodierna statistics chart of two weeks of feeds"></figure>
+        <figure><img src="img/hodierna-growth.jpg" width="440" height="956" loading="lazy" alt="Hodierna growth chart against WHO percentiles"></figure>
+        <figure><img src="img/hodierna-vaccinations.jpg" width="440" height="956" loading="lazy" alt="Hodierna vaccination timeline"></figure>
+      </div>
+      <div class="tags">
+        <span class="tag">React 19</span><span class="tag">TanStack Start</span><span class="tag">Cloudflare Workers</span><span class="tag">D1</span><span class="tag">R2</span><span class="tag">IndexedDB sync</span>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="ai-label">
+    <p class="label" id="ai-label">AI &amp; agentic projects</p>
+    <div class="rows">
+      <div class="row">
+        <div class="when">Agents</div>
+        <div>
+          <h3>Agent orchestration platform</h3>
+          <p class="muted">Runs software work end-to-end: Mastra and Inngest durable workflows orchestrate Claude Agent SDK workers on self-hosted nodes, traced in Langfuse. Multi-tenant auth with SSO step-up and SCIM.</p>
+          <div class="tags"><span class="tag">Claude Agent SDK</span><span class="tag">Mastra</span><span class="tag">Inngest</span><span class="tag">Langfuse</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">Multi-model</div>
+        <div>
+          <h3>Hybrid local + cloud AI stack</h3>
+          <p class="muted">Local models (32B coding models via Ollama on Apple Silicon) working alongside Claude. A Telegram bot hands natural-language tasks to Claude Code behind human approval gates; a Python agent automates a media pipeline.</p>
+          <div class="tags"><span class="tag">Ollama</span><span class="tag">Claude Code</span><span class="tag">Python</span><span class="tag">Docker</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">Agentic dev</div>
+        <div>
+          <h3>HomeHub</h3>
+          <p class="muted">React Native / Expo property-search app built with a multi-agent Claude Code workflow, with parallel agents for features, review and testing.</p>
+          <div class="tags"><span class="tag">React Native</span><span class="tag">Expo</span><span class="tag">Clerk</span><span class="tag">TanStack Query</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">iOS</div>
+        <div>
+          <h3>KMklopt <span class="status">In development</span></h3>
+          <p class="muted">Native iOS and CarPlay mileage log for Dutch lease drivers. AI reconstructs past trips from known routines and suggests corrections.</p>
+          <div class="tags"><span class="tag">Swift</span><span class="tag">CarPlay</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">Agents</div>
+        <div>
+          <h3>Personal finance agents <span class="status">In development</span></h3>
+          <p class="muted">Agents that analyse spending, find subscriptions and contracts, research cheaper alternatives and draft quote requests.</p>
+          <div class="tags"><span class="tag">AI agents</span><span class="tag">Node.js</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">Hardware</div>
+        <div>
+          <h3>Vehicle diagnostics</h3>
+          <p class="muted">Rust diagnostic core with a custom ESP32-S3 CAN-bus adapter built on open hardware.</p>
+          <div class="tags"><span class="tag">Rust</span><span class="tag">ESP32-S3</span><span class="tag">CAN bus</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <p class="label">Experience</p>
+    <div class="rows">
+      <div class="row">
+        <div class="when">2023 – now</div>
+        <div>
+          <h3>Lead Application Developer</h3>
+          <p class="org">APS Group · Eindhoven</p>
+          <ul>
+            <li>Lead development on Cohero, APS Group's AI-powered omnichannel content platform.</li>
+            <li>Designing an agentic delivery pipeline: specialised agents for coding, review and testing, with confidence-based human approval and per-feature cost tracking.</li>
+            <li>Next.js and TypeScript on Cloudflare Workers with a GraphQL/REST backend, built to enterprise security and accessibility standards.</li>
+            <li>As Senior Application Engineer (2023–24): built a configuration-driven UI engine that renders fully customisable interfaces in React, and helped standardise how frontend applications are structured.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">2021 – 2023</div>
+        <div>
+          <h3>Senior Frontend Developer</h3>
+          <p class="org">Kees de Boekhouder · Amsterdam</p>
+          <p class="muted">Web applications that let customers manage their tax statements.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">2020 – 2021</div>
+        <div>
+          <h3>Software Engineer</h3>
+          <p class="org">ICT Group · Eindhoven</p>
+          <p class="muted">Web applications and cloud solutions.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">2018 – 2020</div>
+        <div>
+          <h3>Design Application Engineer</h3>
+          <p class="org">Netaş · Istanbul</p>
+          <p class="muted">System administration tooling on customised Red Hat, CI/CD with Jenkins and Artifactory, and a Python test framework.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">2018</div>
+        <div>
+          <h3>R&amp;D Assistant Specialist</h3>
+          <p class="org">BITES Defence &amp; Aerospace · Bursa</p>
+          <p class="muted">Low-level computer vision algorithms and augmented reality applications in C++ and Qt.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="when">2017 – 2018</div>
+        <div>
+          <h3>R&amp;D Engineer Assistant</h3>
+          <p class="org">Prometeon Tyre Group</p>
+          <p class="muted">Computer vision and signal processing measurement systems for factory lines, in TÜBİTAK-funded R&amp;D projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="edu-label">
+    <p class="label" id="edu-label">Education &amp; recognition</p>
+    <ul class="list">
+      <li><span>BSc Electronics &amp; Telecommunication Engineering, double major in Computer Engineering — Kocaeli University. Computer vision research, one published paper.</span><span class="yr">2013–18</span></li>
+      <li><span>Second prize, TÜBİTAK 2241 industrial thesis competition</span><span class="yr">2018</span></li>
+      <li><span>MATE ROV international competition at NASA, representing Turkey</span><span class="yr"></span></li>
+      <li><span>Professional Scrum Master I · Enterprise Design Thinking Practitioner</span><span class="yr">2021</span></li>
+    </ul>
+  </section>
+
+  <footer id="contact">
+    <h2>Get in touch</h2>
+    <p class="muted">The quickest way to reach me is email.</p>
+    <div class="links" style="margin-top:16px">
+      <a href="mailto:nurhakaltin@gmail.com">nurhakaltin@gmail.com</a>
+      <a href="https://www.linkedin.com/in/nurhakaltin/" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Nurhak" rel="noopener">GitHub</a>
+    </div>
+    <p class="small">© 2026 Nurhak Altın</p>
+  </footer>
+
+</div>
+</body>
+</html>
