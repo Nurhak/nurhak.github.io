@@ -104,6 +104,7 @@
     .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   }
 
+  .feature + .feature { margin-top: 56px; }
   .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
   .tag { font-family: var(--font-mono); font-size: 12px; background: var(--chip); color: var(--ink-2); padding: 2px 8px; border-radius: 4px; }
 
@@ -161,6 +162,23 @@
 
   <section id="work">
     <p class="label">Selected work</p>
+
+    <div class="feature">
+      <div class="feature-head">
+        <h3>RPad</h3>
+        <a href="https://rpad.app" rel="noopener">rpad.app</a>
+      </div>
+      <p class="muted">Turns an iPhone, iPad or Apple Watch into a trackpad, keyboard and presentation remote for a Mac, paired once with a code and end-to-end encrypted. Built end-to-end with an agentic workflow: a PM agent plans each milestone, a dev agent implements it, and a QA agent checks it against written expectations before the next one starts.</p>
+      <div class="shots">
+        <figure><img src="img/rpad-trackpad.jpg" width="440" height="953" loading="lazy" alt="RPad iPhone trackpad screen"></figure>
+        <figure><img src="img/rpad-present.jpg" width="440" height="953" loading="lazy" alt="RPad presentation remote screen"></figure>
+        <figure><img src="img/rpad-macpanel.jpg" width="440" height="953" loading="lazy" alt="RPad Mac control panel with apps and shortcuts"></figure>
+        <figure><img src="img/rpad-pairing.jpg" width="440" height="953" loading="lazy" alt="RPad pairing screen with a six-digit code"></figure>
+      </div>
+      <div class="tags">
+        <span class="tag">Swift 6</span><span class="tag">SwiftUI</span><span class="tag">Rust core</span><span class="tag">CryptoKit</span><span class="tag">Android</span><span class="tag">Multi-agent dev</span>
+      </div>
+    </div>
 
     <div class="feature">
       <div class="feature-head">
@@ -255,7 +273,10 @@
         <div>
           <h3>Senior Frontend Developer</h3>
           <p class="org">Kees de Boekhouder · Amsterdam</p>
-          <p class="muted">Web applications that let customers manage their tax statements.</p>
+          <ul>
+            <li>Built customer-facing features of a bookkeeping and tax-return web app for Dutch freelancers.</li>
+            <li>React, TypeScript and MobX, with Webpack-based build tooling.</li>
+          </ul>
         </div>
       </div>
       <div class="row">
@@ -263,7 +284,10 @@
         <div>
           <h3>Software Engineer</h3>
           <p class="org">ICT Group · Eindhoven</p>
-          <p class="muted">Web applications and cloud solutions.</p>
+          <ul>
+            <li>Built web applications and cloud solutions for industrial technology clients.</li>
+            <li>Certified Professional Scrum Master I during this role.</li>
+          </ul>
         </div>
       </div>
       <div class="row">
@@ -271,7 +295,11 @@
         <div>
           <h3>Design Application Engineer</h3>
           <p class="org">Netaş · Istanbul</p>
-          <p class="muted">System administration tooling on customised Red Hat, CI/CD with Jenkins and Artifactory, and a Python test framework.</p>
+          <ul>
+            <li>Built interactive system administration tools in Perl and Bash on a customised Red Hat platform.</li>
+            <li>Set up CI/CD pipelines with Jenkins, Git and Artifactory.</li>
+            <li>Developed a Python test framework for the platform.</li>
+          </ul>
         </div>
       </div>
       <div class="row">
@@ -279,7 +307,9 @@
         <div>
           <h3>R&amp;D Assistant Specialist</h3>
           <p class="org">BITES Defence &amp; Aerospace · Bursa</p>
-          <p class="muted">Low-level computer vision algorithms and augmented reality applications in C++ and Qt.</p>
+          <ul>
+            <li>Implemented low-level computer vision algorithms and augmented reality applications in C++ and Qt for defence and aerospace R&amp;D.</li>
+          </ul>
         </div>
       </div>
       <div class="row">
@@ -287,7 +317,10 @@
         <div>
           <h3>R&amp;D Engineer Assistant</h3>
           <p class="org">Prometeon Tyre Group</p>
-          <p class="muted">Computer vision and signal processing measurement systems for factory lines, in TÜBİTAK-funded R&amp;D projects.</p>
+          <ul>
+            <li>Developed computer vision and signal processing measurement systems for tyre production lines in three TÜBİTAK TEYDEB-funded R&amp;D projects: tyre air-sealing detection, tyre cord density measurement, and fabric joint width and angle measurement.</li>
+            <li>Wrote pyrometer software over serial communication in C++ and Qt, and prepared patent documentation.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -296,7 +329,7 @@
   <section aria-labelledby="edu-label">
     <p class="label" id="edu-label">Education &amp; recognition</p>
     <ul class="list">
-      <li><span>BSc Electronics &amp; Telecommunication Engineering, double major in Computer Engineering — Kocaeli University. Computer vision research, one published paper.</span><span class="yr">2013–18</span></li>
+      <li><span>BSc Electronics &amp; Telecommunication Engineering, double major in Computer Engineering — Kocaeli University. Computer vision research with one published paper, and real-time pedestrian detection on an embedded platform in the university's embedded systems lab.</span><span class="yr">2013–18</span></li>
       <li><span>Second prize, TÜBİTAK 2241 industrial thesis competition</span><span class="yr">2018</span></li>
       <li><span>MATE ROV international competition at NASA, representing Turkey</span><span class="yr"></span></li>
       <li><span>Professional Scrum Master I · Enterprise Design Thinking Practitioner</span><span class="yr">2021</span></li>
